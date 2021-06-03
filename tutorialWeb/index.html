@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This is the new Tutorials Home Page</title>
+
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar<img src="" alt="" width="30" height="24"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="false">
+                            Java
+                        </button>
+                        <div class="collapse" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a id="functionalprogramming" href="#" class="link-dark rounded">Functional
+                                        Programming</a></li>
+                                <li><a id="generaltopics" href="#" class="link-dark rounded">General Topics</a></li>
+                                <li><a id="collectionsinjava" href="#" class="link-dark rounded">Collections</a></li>
+                                <li><a id="questionanswers" href="#" class="link-dark rounded">Q&A</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            Dashboard
+                        </button>
+                        <div class="collapse" id="dashboard-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                                <li><a href="#" class="link-dark rounded">Annually</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse" aria-expanded="false">
+                            Orders
+                        </button>
+                        <div class="collapse" id="orders-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">New</a></li>
+                                <li><a href="#" class="link-dark rounded">Processed</a></li>
+                                <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                                <li><a href="#" class="link-dark rounded">Returned</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#account-collapse" aria-expanded="false">
+                            Account
+                        </button>
+                        <div class="collapse" id="account-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#" class="link-dark rounded">New...</a></li>
+                                <li><a href="#" class="link-dark rounded">Profile</a></li>
+                                <li><a href="#" class="link-dark rounded">Settings</a></li>
+                                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="main-div" class="col-9">
+                <p id="main-content"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        $("#functionalprogramming").on('click', function () {
+            $("#main-div").load("./main/java/FunctionalProgramming.html");
+        });
+
+        $("#generaltopics").on('click', function () {
+            $("#main-div").load("./main/java/JavaGeneral.html");
+        });
+
+        $("#questionanswers").on('click', function () {
+            $("#main-div").load("./main/java/QuestionAnswers.html");
+        });
+
+        $("#collectionsinjava").on('click', function () {
+            $("#main-div").load("./main/java/CollectionsInJava.html");
+        });
+
+    </script>
+</body>
+
+</html>

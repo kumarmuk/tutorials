@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 class="display-4">Functional - Programming in Java</h1>
+    <p>Functional in nature means some code or function that will take the input and produce an output without altering
+        the source</p>
+
+
+    <h3 class="display-6">Streams</h3>
+    <ul>
+        <li>All classes and interfaces of the Stream API are contained in the java.util.stream package</li>
+        <li>API allows for creation of declarative pipelines for transformation of Arrays and Collections</li>
+        <li>Unlike Collections a stream does not need an iterator to go through all of its elements</li>
+        <ul>
+            <li>Allow for operations to be lazy</li>
+            <li>Streams allow for sequential and parallel execution, filtering based on given predicates,
+                mapping of objects, and much, much more</li>
+            <li>Work well wih lambda expressions</li>
+            <li>Stream are consumables, stream operations create streams, items once visited in a stream can not be
+                revisited, rather a new stream will have to be created.</li>
+            <li>Streams can also be infinite</li>
+        </ul>
+        <li>Streams are not collections and unable to store data, they can be termed as wrappers for Collections and
+            Arrays </li>
+        <li>Creating a Stream Pipeline</li>
+        <p><img src="./main/java/images/streampipeline.PNG"></p>
+        <li>Streams provides some classes to help with primitive types</li>
+        <ul>
+            <li>IntStream, LongStream, DoubleStream : they all extend the BaseStream </li>
+            <li>These classes also help with the autoboxing </li>
+        </ul>
+
+    </ul>
+
+
+</body>
